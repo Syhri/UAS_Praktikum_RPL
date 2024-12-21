@@ -40,12 +40,13 @@
             // lblSignIn
             // 
             lblSignIn.AutoSize = true;
+            lblSignIn.Cursor = Cursors.Hand;
             lblSignIn.Location = new Point(152, 357);
             lblSignIn.Name = "lblSignIn";
             lblSignIn.Size = new Size(181, 15);
             lblSignIn.TabIndex = 9;
             lblSignIn.Text = "Already have an account? Sign In";
-            lblSignIn.Click += this.lblSignIn_Click;
+            lblSignIn.Click += lblSignIn_Click;
             // 
             // btnRegister
             // 
@@ -58,7 +59,7 @@
             btnRegister.TabIndex = 8;
             btnRegister.Text = "Registrasi";
             btnRegister.UseVisualStyleBackColor = false;
-            btnRegister.Click += this.btnRegister_Click;
+            btnRegister.Click += btnRegister_Click;
             // 
             // txtUsername
             // 
@@ -68,7 +69,7 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(275, 29);
             txtUsername.TabIndex = 7;
-            txtUsername.TextChanged += this.txtUsername_TextChanged;
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // txtEmail
             // 
@@ -78,7 +79,7 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(275, 29);
             txtEmail.TabIndex = 6;
-            txtEmail.TextChanged += this.txtEmail_TextChanged;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // label1
             // 
@@ -102,7 +103,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(275, 29);
             txtPassword.TabIndex = 10;
-            txtPassword.TextChanged += this.txtPassword_TextChanged;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // txtConfirmPassword
             // 
@@ -112,12 +113,13 @@
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(275, 29);
             txtConfirmPassword.TabIndex = 11;
-            txtConfirmPassword.TextChanged += this.txtConfirmPassword_TextChanged;
+            txtConfirmPassword.TextChanged += txtConfirmPassword_TextChanged;
             // 
             // RegistrationForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(485, 398);
             Controls.Add(txtConfirmPassword);
             Controls.Add(txtPassword);

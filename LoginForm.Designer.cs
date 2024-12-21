@@ -47,7 +47,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             btnLogin.TabIndex = 12;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += this.btnLogin_Click;
+            btnLogin.Click += btnLogin_Click;
             // 
             // txtPassword
             // 
@@ -74,7 +74,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             label1.BackColor = SystemColors.MenuHighlight;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(0, -2);
+            label1.Location = new Point(0, 0);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.RightToLeft = RightToLeft.No;
@@ -82,17 +82,18 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             label1.TabIndex = 9;
             label1.Text = "HALAMAN LOGIN USER";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // lblSignUp
             // 
             lblSignUp.AutoSize = true;
             lblSignUp.BackColor = SystemColors.ButtonHighlight;
             lblSignUp.Cursor = Cursors.Hand;
-            lblSignUp.Location = new Point(151, 261);
+            lblSignUp.Location = new Point(156, 263);
             lblSignUp.Name = "lblSignUp";
-            lblSignUp.Size = new Size(186, 15);
+            lblSignUp.Size = new Size(175, 15);
             lblSignUp.TabIndex = 13;
-            lblSignUp.Text = "Already have an account? Sign Up";
+            lblSignUp.Text = "Don't have an account? Sign Up";
             lblSignUp.Click += lblSignIn_Click;
             // 
             // LoginForm
@@ -112,15 +113,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             PerformLayout();
         }
 
-        private void lblSignIn_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
 

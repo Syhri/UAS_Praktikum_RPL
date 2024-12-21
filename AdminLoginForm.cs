@@ -16,5 +16,10 @@ namespace Sistem_Pemesanan_Tiket_Kereta
         {
             InitializeComponent();
         }
+
+        private void AdminLoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

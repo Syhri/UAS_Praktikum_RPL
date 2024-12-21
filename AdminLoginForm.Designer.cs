@@ -46,7 +46,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             btnLogin.TabIndex = 8;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += this.btnLogin_Click;
+            btnLogin.Click += btnLogin_Click;
             // 
             // txtPassword
             // 
@@ -57,7 +57,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             txtPassword.Size = new Size(275, 29);
             txtPassword.TabIndex = 7;
             txtPassword.UseSystemPasswordChar = true;
-            txtPassword.TextChanged += this.txtPassword_TextChanged;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // txtUsername
             // 
@@ -67,7 +67,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(275, 29);
             txtUsername.TabIndex = 6;
-            txtUsername.TextChanged += this.txtUsername_TextChanged;
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // label1
             // 
@@ -95,6 +95,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             Controls.Add(label1);
             Name = "AdminLoginForm";
             Text = "Form1";
+            Load += AdminLoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
