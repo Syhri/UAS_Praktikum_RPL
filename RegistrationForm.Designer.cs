@@ -129,7 +129,9 @@
             Controls.Add(txtEmail);
             Controls.Add(label1);
             Name = "RegistrationForm";
-            Text = "Registrasi";
+            Text = "Registrasi Form";
+            this.Load += new System.EventHandler(this.RegistrationForm_Load); // Pastikan event handler terhubung di sini
+            //Load += this.RegistrationForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Sistem_Pemesanan_Tiket_Kereta
 {
-    partial class MainForm
+    partial class MainFormUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // MainFormUser
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLightLight;
+            ClientSize = new Size(533, 423);
+            Name = "MainFormUser";
+            Text = "Main Form User";
+            ResumeLayout(false);
         }
 
         #endregion

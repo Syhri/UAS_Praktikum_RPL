@@ -28,8 +28,8 @@ namespace Sistem_Pemesanan_Tiket_Kereta
         private void btnLoginAdmin_Click(object sender, EventArgs e)
         {
             // Arahkan ke form login admin
-            AdminLoginForm adminLoginForm = new AdminLoginForm();
-            adminLoginForm.Show();
+            AdminLoginForm loginForm = new AdminLoginForm();
+            loginForm.Show();
             this.Hide();
         }
 

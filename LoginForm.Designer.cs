@@ -57,13 +57,12 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(275, 29);
             txtPassword.TabIndex = 11;
-            txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
             txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(108, 97);
+            txtUsername.Location = new Point(108, 94);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(275, 29);
             txtUsername.TabIndex = 10;
@@ -108,7 +107,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             Controls.Add(txtUsername);
             Controls.Add(label1);
             Name = "LoginForm";
-            Text = "Form1";
+            Text = "User Form Login";
             ResumeLayout(false);
             PerformLayout();
         }

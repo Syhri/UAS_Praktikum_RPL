@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistem_Pemesanan_Tiket_Kereta
 {
-    public partial class MainForm : Form
+    public partial class MainFormUser : Form
     {
-        public MainForm()
+        public MainFormUser()
         {
             InitializeComponent();
         }

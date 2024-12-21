@@ -1,17 +1,9 @@
-﻿
-namespace Sistem_Pemesanan_Tiket_Kereta
+﻿namespace Sistem_Pemesanan_Tiket_Kereta
 {
     partial class AdminLoginForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -23,10 +15,6 @@ namespace Sistem_Pemesanan_Tiket_Kereta
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             btnLogin = new Button();
@@ -56,7 +44,6 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(275, 29);
             txtPassword.TabIndex = 7;
-            txtPassword.UseSystemPasswordChar = true;
             txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // txtUsername
@@ -82,6 +69,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             label1.TabIndex = 5;
             label1.Text = "HALAMAN LOGIN ADMIN";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // AdminLoginForm
             // 
@@ -94,31 +82,17 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             Controls.Add(txtUsername);
             Controls.Add(label1);
             Name = "AdminLoginForm";
-            Text = "Form1";
+            Text = "Admin Form Login";
             Load += AdminLoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
-        private Button btnLogin;
-        private TextBox txtPassword;
-        private TextBox txtUsername;
-        private Label label1;
+
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label label1;
     }
 }

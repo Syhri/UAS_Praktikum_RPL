@@ -4,6 +4,9 @@
     <Compile Update="AdminLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MainFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -13,7 +16,7 @@
     <Compile Update="LoginSelectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MainForm.cs">
+    <Compile Update="MainFormUser.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

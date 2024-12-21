@@ -83,7 +83,7 @@
             Controls.Add(btnLoginUser);
             Controls.Add(label1);
             Name = "LoginSelectionForm";
-            Text = "Form1";
+            Text = "Login Selection";
             ResumeLayout(false);
         }
 

@@ -2,7 +2,6 @@ C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sist
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.AdminLoginForm.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.LoginForm.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.LoginSelectionForm.resources
-C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.MainForm.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.Properties.Resources.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.RegistrationForm.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.csproj.GenerateResource.cache
@@ -35,3 +34,5 @@ C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sist
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.pdb
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.genruntimeconfig.cache
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\ref\Sistem Pemesanan Tiket Kereta.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.MainFormAdmin.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.MainFormUser.resources
