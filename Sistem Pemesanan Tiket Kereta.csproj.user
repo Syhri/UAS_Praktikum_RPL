@@ -22,10 +22,10 @@
     <Compile Update="UserControl\DataUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl\DataTiket.cs">
+    <Compile Update="UserControl\DataKereta.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl\DataJadwalKereta.cs">
+    <Compile Update="UserControl\DataTiket.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

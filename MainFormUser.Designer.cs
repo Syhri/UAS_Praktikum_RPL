@@ -35,7 +35,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(533, 423);
+            ClientSize = new Size(556, 373);
             Name = "MainFormUser";
             Text = "Main Form User";
             ResumeLayout(false);

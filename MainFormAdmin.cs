@@ -13,12 +13,12 @@ namespace Sistem_Pemesanan_Tiket_Kereta
         private void MainFormAdmin_Load(object sender, EventArgs e)
         {
             // Set default page
-            ShowControl(new DataJadwalKereta());
+            ShowControl(new DataKereta());
         }
 
         private void btnManageTrains_Click(object sender, EventArgs e)
         {
-            ShowControl(new DataJadwalKereta());
+            ShowControl(new DataKereta());
         }
 
         private void btnManageTickets_Click(object sender, EventArgs e)

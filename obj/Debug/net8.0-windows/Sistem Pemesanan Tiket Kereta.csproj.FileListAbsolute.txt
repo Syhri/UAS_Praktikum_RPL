@@ -38,4 +38,4 @@ C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sist
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.MainFormUser.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataTiket.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataUsers.resources
-C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataJadwalKereta.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataKereta.resources

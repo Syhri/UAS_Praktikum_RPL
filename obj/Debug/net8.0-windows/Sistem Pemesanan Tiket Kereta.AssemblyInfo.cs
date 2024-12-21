@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistem Pemesanan Tiket Kereta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8793a7f60bb02a4e6c76db31f849d1650d3b9ca4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0248c56229c12a376d36523cc8629de3d5410609")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistem Pemesanan Tiket Kereta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistem Pemesanan Tiket Kereta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

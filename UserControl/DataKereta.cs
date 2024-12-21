@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace Sistem_Pemesanan_Tiket_Kereta
 {
-    public partial class DataTiket : UserControl
+    public partial class DataKereta : UserControl
     {
         private string connectionString = "server=localhost;port=3306;username=root;password=;database=uas_rpl";
 
-        public DataTiket()
+        public DataKereta()
         {
             InitializeComponent();
             LoadData();
@@ -22,7 +22,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
-                    MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM tiket", conn);
+                    MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM kereta", conn);
                     DataTable dt = new DataTable();
                     da.Fill(dt);
                     dataGridView1.DataSource = dt;
@@ -43,12 +43,10 @@ namespace Sistem_Pemesanan_Tiket_Kereta
                     using (MySqlConnection conn = new MySqlConnection(connectionString))
                     {
                         conn.Open();
-                        MySqlCommand cmd = new MySqlCommand("INSERT INTO tiket (kereta_id, asal, tujuan, waktu_berangkat, waktu_tiba) VALUES (@KeretaId, @Asal, @Tujuan, @WaktuBerangkat, @WaktuTiba)", conn);
-                        cmd.Parameters.AddWithValue("@KeretaId", txtKeretaId.Text);
-                        cmd.Parameters.AddWithValue("@Asal", txtAsal.Text);
-                        cmd.Parameters.AddWithValue("@Tujuan", txtTujuan.Text);
-                        cmd.Parameters.AddWithValue("@WaktuBerangkat", dtpWaktuBerangkat.Value.ToString("yyyy-MM-dd HH:mm:ss"));
-                        cmd.Parameters.AddWithValue("@WaktuTiba", dtpWaktuTiba.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO kereta (nama_kereta, jenis_kereta, rute) VALUES (@NamaKereta, @JenisKereta, @Rute)", conn);
+                        cmd.Parameters.AddWithValue("@NamaKereta", txtNamaKereta.Text);
+                        cmd.Parameters.AddWithValue("@JenisKereta", txtJenisKereta.Text);
+                        cmd.Parameters.AddWithValue("@Rute", txtRute.Text);
                         cmd.ExecuteNonQuery();
                     }
                     LoadData();
@@ -70,13 +68,11 @@ namespace Sistem_Pemesanan_Tiket_Kereta
                     using (MySqlConnection conn = new MySqlConnection(connectionString))
                     {
                         conn.Open();
-                        MySqlCommand cmd = new MySqlCommand("UPDATE tiket SET kereta_id = @KeretaId, asal = @Asal, tujuan = @Tujuan, waktu_berangkat = @WaktuBerangkat, waktu_tiba = @WaktuTiba WHERE id = @Id", conn);
+                        MySqlCommand cmd = new MySqlCommand("UPDATE kereta SET nama_kereta = @NamaKereta, jenis_kereta = @JenisKereta, rute = @Rute WHERE id = @Id", conn);
                         cmd.Parameters.AddWithValue("@Id", dataGridView1.SelectedRows[0].Cells["id"].Value);
-                        cmd.Parameters.AddWithValue("@KeretaId", txtKeretaId.Text);
-                        cmd.Parameters.AddWithValue("@Asal", txtAsal.Text);
-                        cmd.Parameters.AddWithValue("@Tujuan", txtTujuan.Text);
-                        cmd.Parameters.AddWithValue("@WaktuBerangkat", dtpWaktuBerangkat.Value.ToString("yyyy-MM-dd HH:mm:ss"));
-                        cmd.Parameters.AddWithValue("@WaktuTiba", dtpWaktuTiba.Value.ToString("yyyy-MM-dd HH:mm:ss"));
+                        cmd.Parameters.AddWithValue("@NamaKereta", txtNamaKereta.Text);
+                        cmd.Parameters.AddWithValue("@JenisKereta", txtJenisKereta.Text);
+                        cmd.Parameters.AddWithValue("@Rute", txtRute.Text);
                         cmd.ExecuteNonQuery();
                     }
                     LoadData();
@@ -98,7 +94,7 @@ namespace Sistem_Pemesanan_Tiket_Kereta
                     using (MySqlConnection conn = new MySqlConnection(connectionString))
                     {
                         conn.Open();
-                        MySqlCommand cmd = new MySqlCommand("DELETE FROM tiket WHERE id = @Id", conn);
+                        MySqlCommand cmd = new MySqlCommand("DELETE FROM kereta WHERE id = @Id", conn);
                         cmd.Parameters.AddWithValue("@Id", dataGridView1.SelectedRows[0].Cells["id"].Value);
                         cmd.ExecuteNonQuery();
                     }
@@ -116,35 +112,34 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-                txtKeretaId.Text = selectedRow.Cells["kereta_id"].Value?.ToString() ?? string.Empty;
-                txtAsal.Text = selectedRow.Cells["asal"].Value?.ToString() ?? string.Empty;
-                txtTujuan.Text = selectedRow.Cells["tujuan"].Value?.ToString() ?? string.Empty;
-                dtpWaktuBerangkat.Value = DateTime.Parse(selectedRow.Cells["waktu_berangkat"].Value?.ToString() ?? DateTime.Now.ToString());
-                dtpWaktuTiba.Value = DateTime.Parse(selectedRow.Cells["waktu_tiba"].Value?.ToString() ?? DateTime.Now.ToString());
+                txtNamaKereta.Text = selectedRow.Cells["nama_kereta"].Value?.ToString() ?? string.Empty;
+                txtJenisKereta.Text = selectedRow.Cells["jenis_kereta"].Value?.ToString() ?? string.Empty;
+                txtRute.Text = selectedRow.Cells["rute"].Value?.ToString() ?? string.Empty;
             }
         }
 
         private void ClearFields()
         {
-            txtKeretaId.Clear();
-            txtAsal.Clear();
-            txtTujuan.Clear();
-            dtpWaktuBerangkat.Value = DateTime.Now;
-            dtpWaktuTiba.Value = DateTime.Now;
+            txtNamaKereta.Clear();
+            txtJenisKereta.Clear();
+            txtRute.Clear();
         }
 
         private bool IsValidInput()
         {
-            if (string.IsNullOrWhiteSpace(txtKeretaId.Text) ||
-                string.IsNullOrWhiteSpace(txtAsal.Text) ||
-                string.IsNullOrWhiteSpace(txtTujuan.Text) ||
-                dtpWaktuBerangkat.Value == null ||
-                dtpWaktuTiba.Value == null)
+            if (string.IsNullOrWhiteSpace(txtNamaKereta.Text) ||
+                string.IsNullOrWhiteSpace(txtJenisKereta.Text) ||
+                string.IsNullOrWhiteSpace(txtRute.Text))
             {
                 MessageBox.Show("Mohon isi semua kolom.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;
+        }
+
+        private void txtNamaKereta_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Sistem_Pemesanan_Tiket_Kereta
 {
-    partial class DataUsers
+    partial class DataKereta
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -22,14 +22,12 @@
             btnAdd = new Button();
             btnUpdate = new Button();
             btnDelete = new Button();
-            txtUsername = new TextBox();
-            txtPassword = new TextBox();
-            txtEmail = new TextBox();
-            txtFullName = new TextBox();
+            txtNamaKereta = new TextBox();
+            txtJenisKereta = new TextBox();
+            txtRute = new TextBox();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -39,9 +37,9 @@
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label1.Location = new Point(20, 20);
             label1.Name = "label1";
-            label1.Size = new Size(220, 25);
+            label1.Size = new Size(229, 25);
             label1.TabIndex = 0;
-            label1.Text = "Pengelolaan Data Users";
+            label1.Text = "Pengelolaan Data Kereta";
             // 
             // dataGridView1
             // 
@@ -82,92 +80,74 @@
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
-            // txtUsername
+            // txtNamaKereta
             // 
-            txtUsername.BorderStyle = BorderStyle.FixedSingle;
-            txtUsername.Location = new Point(120, 60);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(200, 23);
-            txtUsername.TabIndex = 5;
+            txtNamaKereta.BorderStyle = BorderStyle.FixedSingle;
+            txtNamaKereta.Location = new Point(120, 60);
+            txtNamaKereta.Name = "txtNamaKereta";
+            txtNamaKereta.Size = new Size(200, 23);
+            txtNamaKereta.TabIndex = 5;
+            txtNamaKereta.TextChanged += txtNamaKereta_TextChanged;
             // 
-            // txtPassword
+            // txtJenisKereta
             // 
-            txtPassword.BorderStyle = BorderStyle.FixedSingle;
-            txtPassword.Location = new Point(120, 90);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(200, 23);
-            txtPassword.TabIndex = 6;
+            txtJenisKereta.BorderStyle = BorderStyle.FixedSingle;
+            txtJenisKereta.Location = new Point(120, 90);
+            txtJenisKereta.Name = "txtJenisKereta";
+            txtJenisKereta.Size = new Size(200, 23);
+            txtJenisKereta.TabIndex = 6;
             // 
-            // txtEmail
+            // txtRute
             // 
-            txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Location = new Point(500, 60);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(200, 23);
-            txtEmail.TabIndex = 7;
-            // 
-            // txtFullName
-            // 
-            txtFullName.BorderStyle = BorderStyle.FixedSingle;
-            txtFullName.Location = new Point(500, 90);
-            txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(200, 23);
-            txtFullName.TabIndex = 8;
+            txtRute.BorderStyle = BorderStyle.FixedSingle;
+            txtRute.Location = new Point(500, 60);
+            txtRute.Name = "txtRute";
+            txtRute.Size = new Size(200, 23);
+            txtRute.TabIndex = 7;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(20, 60);
             label2.Name = "label2";
-            label2.Size = new Size(60, 15);
-            label2.TabIndex = 9;
-            label2.Text = "Username";
+            label2.Size = new Size(75, 15);
+            label2.TabIndex = 8;
+            label2.Text = "Nama Kereta";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(20, 90);
             label3.Name = "label3";
-            label3.Size = new Size(57, 15);
-            label3.TabIndex = 10;
-            label3.Text = "Password";
+            label3.Size = new Size(68, 15);
+            label3.TabIndex = 9;
+            label3.Text = "Jenis Kereta";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(400, 60);
             label4.Name = "label4";
-            label4.Size = new Size(36, 15);
-            label4.TabIndex = 11;
-            label4.Text = "Email";
+            label4.Size = new Size(31, 15);
+            label4.TabIndex = 10;
+            label4.Text = "Rute";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(400, 90);
-            label5.Name = "label5";
-            label5.Size = new Size(87, 15);
-            label5.TabIndex = 12;
-            label5.Text = "Nama Lengkap";
-            // 
-            // DataUsers
+            // DataKereta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(txtFullName);
-            Controls.Add(txtEmail);
-            Controls.Add(txtPassword);
-            Controls.Add(txtUsername);
+            Controls.Add(txtRute);
+            Controls.Add(txtJenisKereta);
+            Controls.Add(txtNamaKereta);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
             Controls.Add(btnAdd);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
-            Name = "DataUsers";
+            Name = "DataKereta";
             Size = new Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -181,13 +161,11 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtNamaKereta;
+        private System.Windows.Forms.TextBox txtJenisKereta;
+        private System.Windows.Forms.TextBox txtRute;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
     }
 }
