@@ -1,0 +1,37 @@
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.AdminLoginForm.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.LoginForm.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.LoginSelectionForm.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.MainForm.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.Properties.Resources.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.RegistrationForm.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.AssemblyInfoInputs.cache
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.AssemblyInfo.cs
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.sourcelink.json
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.exe
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.deps.json
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.runtimeconfig.json
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.pdb
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem P.B1302889.Up2Date
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\refint\Sistem Pemesanan Tiket Kereta.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.pdb
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.genruntimeconfig.cache
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\ref\Sistem Pemesanan Tiket Kereta.dll

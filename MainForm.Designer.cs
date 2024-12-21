@@ -1,6 +1,6 @@
 ﻿namespace Sistem_Pemesanan_Tiket_Kereta
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
