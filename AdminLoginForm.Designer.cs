@@ -1,4 +1,5 @@
-﻿namespace Sistem_Pemesanan_Tiket_Kereta
+﻿
+namespace Sistem_Pemesanan_Tiket_Kereta
 {
     partial class AdminLoginForm
     {
@@ -96,6 +97,21 @@
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

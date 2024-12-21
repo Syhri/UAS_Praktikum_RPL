@@ -1,4 +1,5 @@
-﻿namespace Sistem_Pemesanan_Tiket_Kereta
+﻿
+namespace Sistem_Pemesanan_Tiket_Kereta
 {
     partial class LoginForm
     {
@@ -46,6 +47,7 @@
             btnLogin.TabIndex = 12;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += this.btnLogin_Click;
             // 
             // txtPassword
             // 
@@ -65,7 +67,7 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(275, 29);
             txtUsername.TabIndex = 10;
-            txtUsername.TextChanged += this.txtUsername_TextChanged;
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // label1
             // 
@@ -91,7 +93,7 @@
             lblSignUp.Size = new Size(186, 15);
             lblSignUp.TabIndex = 13;
             lblSignUp.Text = "Already have an account? Sign Up";
-            lblSignUp.Click += this.lblSignIn_Click;
+            lblSignUp.Click += lblSignIn_Click;
             // 
             // LoginForm
             // 
@@ -108,6 +110,16 @@
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void lblSignIn_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
