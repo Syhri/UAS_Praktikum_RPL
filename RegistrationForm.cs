@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -68,6 +69,27 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             if (password == PasswordPlaceholder) password = "";
             if (confirmPassword == ConfirmPasswordPlaceholder) confirmPassword = "";
 
+            // Validasi email harus mengandung '@'
+            if (!email.Contains("@"))
+            {
+                MessageBox.Show("Email harus mengandung '@'.", "Registrasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validasi password minimal 8 karakter
+            if (password.Length < 8)
+            {
+                MessageBox.Show("Password harus minimal 8 karakter.", "Registrasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validasi konfirmasi password minimal 8 karakter
+            if (confirmPassword.Length < 8)
+            {
+                MessageBox.Show("Konfirmasi password harus minimal 8 karakter.", "Registrasi Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             // Implementasi logika registrasi di sini
             if (password == confirmPassword)
             {
@@ -91,16 +113,28 @@ namespace Sistem_Pemesanan_Tiket_Kereta
 
         private bool RegisterUser(string email, string username, string password)
         {
-            try
+            string connectionString = "server=localhost;port=3306;username=root;password=;database=uas_rpl;";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                // Logika penyimpanan data ke database
-                // Contoh: menggunakan MySqlConnection untuk menyimpan data
-                return true; // Kembalikan true jika berhasil
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                try
+                {
+                    connection.Open();
+                    string query = "INSERT INTO users (email, username, password) VALUES (@Email, @Username, @Password)";
+                    using (MySqlCommand cmd = new MySqlCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@Email", email);
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        cmd.Parameters.AddWithValue("@Password", password);
+
+                        int result = cmd.ExecuteNonQuery();
+                        return result > 0;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
         }
 
