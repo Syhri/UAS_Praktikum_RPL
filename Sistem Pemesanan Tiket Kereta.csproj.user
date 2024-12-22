@@ -43,6 +43,15 @@
     <Compile Update="UserControl\DataPemesananTiket.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UserControl\DataBookings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl\FormPesanTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControl\FormPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserControl\UserProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>

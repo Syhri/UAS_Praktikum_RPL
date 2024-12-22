@@ -86,3 +86,6 @@ C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sist
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataPemesananTiket.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataPencarianTiket.resources
 C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.UserProfile.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.FormPembayaran.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataBookings.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.FormPesanTiket.resources
