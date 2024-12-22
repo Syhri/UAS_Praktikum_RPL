@@ -19,13 +19,40 @@
     <Compile Update="MainFormUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UserControl\DataUsers.cs">
+    <Compile Update="AdminControl\DataUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl\DataKereta.cs">
+    <Compile Update="AdminControl\DataKereta.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControl\DataTiket.cs">
+    <Compile Update="AdminControl\DataTiket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AdminControl\DataPembelian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AdminControl\DataPemesananTerbayar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AdminControl\DataTiketTerbit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl\DataPencarianTiket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl\DataPemesananTiket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl\DataBookings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControl\FormPesanTiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControl\FormPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControl\UserProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

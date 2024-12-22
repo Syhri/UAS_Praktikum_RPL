@@ -36,6 +36,7 @@
             txtPassword = new TextBox();
             txtConfirmPassword = new TextBox();
             pictureBox1 = new PictureBox();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             lblSignIn.AutoSize = true;
             lblSignIn.Cursor = Cursors.Hand;
             lblSignIn.ForeColor = Color.SlateGray;
-            lblSignIn.Location = new Point(154, 400);
+            lblSignIn.Location = new Point(150, 434);
             lblSignIn.Name = "lblSignIn";
             lblSignIn.Size = new Size(181, 15);
             lblSignIn.TabIndex = 9;
@@ -56,7 +57,7 @@
             btnRegister.BackColor = SystemColors.HighlightText;
             btnRegister.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRegister.ForeColor = Color.LightSlateGray;
-            btnRegister.Location = new Point(172, 338);
+            btnRegister.Location = new Point(164, 367);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(147, 48);
             btnRegister.TabIndex = 8;
@@ -68,7 +69,7 @@
             // 
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
             txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(107, 197);
+            txtUsername.Location = new Point(107, 244);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(275, 29);
             txtUsername.TabIndex = 7;
@@ -78,7 +79,7 @@
             // 
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
             txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtEmail.Location = new Point(107, 162);
+            txtEmail.Location = new Point(107, 174);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(275, 29);
             txtEmail.TabIndex = 6;
@@ -102,7 +103,7 @@
             // 
             txtPassword.BorderStyle = BorderStyle.FixedSingle;
             txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(107, 232);
+            txtPassword.Location = new Point(107, 279);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(275, 29);
             txtPassword.TabIndex = 10;
@@ -112,7 +113,7 @@
             // 
             txtConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
             txtConfirmPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtConfirmPassword.Location = new Point(107, 267);
+            txtConfirmPassword.Location = new Point(107, 314);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(275, 29);
             txtConfirmPassword.TabIndex = 11;
@@ -121,7 +122,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo1;
-            pictureBox1.Location = new Point(134, 59);
+            pictureBox1.Location = new Point(126, 59);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(225, 97);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -129,12 +130,22 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(107, 209);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(275, 29);
+            textBox1.TabIndex = 13;
+            // 
             // RegistrationForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Lavender;
-            ClientSize = new Size(485, 441);
+            ClientSize = new Size(485, 470);
+            Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             Controls.Add(txtConfirmPassword);
             Controls.Add(txtPassword);
@@ -161,5 +172,6 @@
         private TextBox txtPassword;
         private TextBox txtConfirmPassword;
         private PictureBox pictureBox1;
+        private TextBox textBox1;
     }
 }

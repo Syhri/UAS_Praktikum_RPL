@@ -20,7 +20,11 @@
             pnlNavbar = new Panel();
             btnManageTrains = new Button();
             btnManageTickets = new Button();
+            btnManagePurchases = new Button();
+            btnManagePaidOrders = new Button();
+            btnManageIssuedTickets = new Button();
             btnManageUsers = new Button();
+            btnLogout = new Button();
             pnlContent = new Panel();
             pnlNavbar.SuspendLayout();
             SuspendLayout();
@@ -29,7 +33,11 @@
             // 
             pnlNavbar.Controls.Add(btnManageTrains);
             pnlNavbar.Controls.Add(btnManageTickets);
+            pnlNavbar.Controls.Add(btnManagePurchases);
+            pnlNavbar.Controls.Add(btnManagePaidOrders);
+            pnlNavbar.Controls.Add(btnManageIssuedTickets);
             pnlNavbar.Controls.Add(btnManageUsers);
+            pnlNavbar.Controls.Add(btnLogout);
             pnlNavbar.Dock = DockStyle.Left;
             pnlNavbar.Location = new Point(0, 0);
             pnlNavbar.Margin = new Padding(4, 3, 4, 3);
@@ -43,7 +51,7 @@
             btnManageTrains.Location = new Point(14, 14);
             btnManageTrains.Margin = new Padding(4, 3, 4, 3);
             btnManageTrains.Name = "btnManageTrains";
-            btnManageTrains.Size = new Size(204, 58);
+            btnManageTrains.Size = new Size(204, 40);
             btnManageTrains.TabIndex = 0;
             btnManageTrains.Text = "Data Kereta";
             btnManageTrains.UseVisualStyleBackColor = true;
@@ -51,25 +59,69 @@
             // 
             // btnManageTickets
             // 
-            btnManageTickets.Location = new Point(14, 78);
+            btnManageTickets.Location = new Point(14, 65);
             btnManageTickets.Margin = new Padding(4, 3, 4, 3);
             btnManageTickets.Name = "btnManageTickets";
-            btnManageTickets.Size = new Size(204, 58);
+            btnManageTickets.Size = new Size(204, 36);
             btnManageTickets.TabIndex = 1;
             btnManageTickets.Text = "Data Tiket";
             btnManageTickets.UseVisualStyleBackColor = true;
             btnManageTickets.Click += btnManageTickets_Click;
             // 
+            // btnManagePurchases
+            // 
+            btnManagePurchases.Location = new Point(13, 116);
+            btnManagePurchases.Margin = new Padding(4, 3, 4, 3);
+            btnManagePurchases.Name = "btnManagePurchases";
+            btnManagePurchases.Size = new Size(204, 37);
+            btnManagePurchases.TabIndex = 2;
+            btnManagePurchases.Text = "Data Pembelian";
+            btnManagePurchases.UseVisualStyleBackColor = true;
+            btnManagePurchases.Click += btnManagePurchases_Click;
+            // 
+            // btnManagePaidOrders
+            // 
+            btnManagePaidOrders.Location = new Point(13, 170);
+            btnManagePaidOrders.Margin = new Padding(4, 3, 4, 3);
+            btnManagePaidOrders.Name = "btnManagePaidOrders";
+            btnManagePaidOrders.Size = new Size(204, 43);
+            btnManagePaidOrders.TabIndex = 3;
+            btnManagePaidOrders.Text = "Pemesanan Terbayar";
+            btnManagePaidOrders.UseVisualStyleBackColor = true;
+            btnManagePaidOrders.Click += btnManagePaidOrders_Click;
+            // 
+            // btnManageIssuedTickets
+            // 
+            btnManageIssuedTickets.Location = new Point(13, 228);
+            btnManageIssuedTickets.Margin = new Padding(4, 3, 4, 3);
+            btnManageIssuedTickets.Name = "btnManageIssuedTickets";
+            btnManageIssuedTickets.Size = new Size(204, 39);
+            btnManageIssuedTickets.TabIndex = 4;
+            btnManageIssuedTickets.Text = "Tiket Terbit";
+            btnManageIssuedTickets.UseVisualStyleBackColor = true;
+            btnManageIssuedTickets.Click += btnManageIssuedTickets_Click;
+            // 
             // btnManageUsers
             // 
-            btnManageUsers.Location = new Point(14, 143);
+            btnManageUsers.Location = new Point(13, 283);
             btnManageUsers.Margin = new Padding(4, 3, 4, 3);
             btnManageUsers.Name = "btnManageUsers";
-            btnManageUsers.Size = new Size(204, 58);
-            btnManageUsers.TabIndex = 2;
+            btnManageUsers.Size = new Size(204, 38);
+            btnManageUsers.TabIndex = 5;
             btnManageUsers.Text = "Data Users";
             btnManageUsers.UseVisualStyleBackColor = true;
             btnManageUsers.Click += btnManageUsers_Click;
+            // 
+            // btnLogout
+            // 
+            btnLogout.Location = new Point(13, 469);
+            btnLogout.Margin = new Padding(4, 3, 4, 3);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(204, 38);
+            btnLogout.TabIndex = 6;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // pnlContent
             // 
@@ -101,7 +153,11 @@
         private System.Windows.Forms.Panel pnlNavbar;
         private System.Windows.Forms.Button btnManageTrains;
         private System.Windows.Forms.Button btnManageTickets;
+        private System.Windows.Forms.Button btnManagePurchases;
+        private System.Windows.Forms.Button btnManagePaidOrders;
+        private System.Windows.Forms.Button btnManageIssuedTickets;
         private System.Windows.Forms.Button btnManageUsers;
+        private System.Windows.Forms.Button btnLogout; // Tambahkan ini
         private System.Windows.Forms.Panel pnlContent;
     }
 }

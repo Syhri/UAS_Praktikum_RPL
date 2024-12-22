@@ -26,9 +26,32 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             ShowControl(new DataTiket());
         }
 
+        private void btnManagePurchases_Click(object sender, EventArgs e)
+        {
+            ShowControl(new DataPembelian());
+        }
+
+        private void btnManagePaidOrders_Click(object sender, EventArgs e)
+        {
+            ShowControl(new DataPemesananTerbayar());
+        }
+
+        private void btnManageIssuedTickets_Click(object sender, EventArgs e)
+        {
+            ShowControl(new DataTiketTerbit());
+        }
+
         private void btnManageUsers_Click(object sender, EventArgs e)
         {
             ShowControl(new DataUsers());
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            // Log out and return to LoginForm
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
 
         private void ShowControl(UserControl control)
@@ -38,14 +61,8 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             pnlContent.Controls.Add(control);
         }
 
-        private void pnlContent_Paint(object sender, PaintEventArgs e)
-        {
+        private void pnlContent_Paint(object sender, PaintEventArgs e) { }
 
-        }
-
-        private void pnlNavbar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        private void pnlNavbar_Paint(object sender, PaintEventArgs e) { }
     }
 }

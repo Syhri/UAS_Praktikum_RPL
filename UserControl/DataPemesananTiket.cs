@@ -5,16 +5,16 @@ using MySql.Data.MySqlClient;
 
 namespace Sistem_Pemesanan_Tiket_Kereta
 {
-    public partial class MainFormUser : Form
+    public partial class DataPemesananTiket : UserControl
     {
         private string connectionString = "server=localhost;port=3306;username=root;password=;database=uas_rpl";
 
-        public MainFormUser()
+        public DataPemesananTiket()
         {
             InitializeComponent();
         }
 
-        private void MainFormUser_Load(object sender, EventArgs e)
+        private void DataPemesananTiket_Load(object sender, EventArgs e)
         {
             LoadDataTiket();
         }
@@ -57,53 +57,47 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             LoadDataTiket(txtSearch.Text);
         }
 
-        private void btnSearchTickets_Click(object sender, EventArgs e)
-        {
-            ShowControl(new DataPencarianTiket());
-        }
-
-        private void btnViewBookings_Click(object sender, EventArgs e)
-        {
-            ShowControl(new DataPemesananTiket());
-        }
-
-        private void btnViewProfile_Click(object sender, EventArgs e)
-        {
-            ShowControl(new UserProfile());
-        }
-
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            // Log out and return to LoginSelectionForm
-            this.Hide();
-            LoginSelectionForm loginForm = new LoginSelectionForm();
-            loginForm.Show();
-        }
-
         private void btnPesan_Click(object sender, EventArgs e)
         {
             if (dgvTiket.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgvTiket.SelectedRows[0];
                 int tiketId = Convert.ToInt32(selectedRow.Cells["id"].Value);
-                FormPesanTiket formPesan = new FormPesanTiket(tiketId);
-                formPesan.ShowDialog();
+
+                // Example: Assuming you get the passenger name and ticket quantity from TextBoxes or other inputs
+                string namaPenumpang = "Nama Penumpang"; // Replace with actual input
+                int jumlahTiket = 1; // Replace with actual input
+
+                try
+                {
+                    using (MySqlConnection conn = new MySqlConnection(connectionString))
+                    {
+                        conn.Open();
+                        MySqlCommand cmd = new MySqlCommand("INSERT INTO bookings (user_id, tiket_id, status, nama_penumpang, jumlah_tiket) VALUES (@UserId, @TiketId, 'Belum Dibayar', @NamaPenumpang, @JumlahTiket)", conn);
+                        cmd.Parameters.AddWithValue("@UserId", GetCurrentUserId());
+                        cmd.Parameters.AddWithValue("@TiketId", tiketId);
+                        cmd.Parameters.AddWithValue("@NamaPenumpang", namaPenumpang);
+                        cmd.Parameters.AddWithValue("@JumlahTiket", jumlahTiket);
+                        cmd.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("Pemesanan berhasil!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error processing order: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Pilih tiket yang ingin dipesan terlebih dahulu.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Pilih tiket yang ingin dipesan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
-        private void ShowControl(UserControl control)
+        private int GetCurrentUserId()
         {
-            pnlContent.Controls.Clear();
-            control.Dock = DockStyle.Fill;
-            pnlContent.Controls.Add(control);
+            // Implementasikan logika untuk mendapatkan user ID saat ini
+            // Misalnya, bisa dari sesi login pengguna
+            return 1; // Contoh: mengembalikan user ID 1
         }
-
-        private void pnlContent_Paint(object sender, PaintEventArgs e) { }
-
-        private void pnlNavbar_Paint(object sender, PaintEventArgs e) { }
     }
 }

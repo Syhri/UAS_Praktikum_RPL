@@ -80,3 +80,12 @@ D:\Praktikum RPL\Tubes RPL SLEBEWW\UAS_Praktikum_RPL\obj\Debug\net8.0-windows\re
 D:\Praktikum RPL\Tubes RPL SLEBEWW\UAS_Praktikum_RPL\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.pdb
 D:\Praktikum RPL\Tubes RPL SLEBEWW\UAS_Praktikum_RPL\obj\Debug\net8.0-windows\Sistem Pemesanan Tiket Kereta.genruntimeconfig.cache
 D:\Praktikum RPL\Tubes RPL SLEBEWW\UAS_Praktikum_RPL\obj\Debug\net8.0-windows\ref\Sistem Pemesanan Tiket Kereta.dll
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataPembelian.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataPemesananTerbayar.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataTiketTerbit.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataPemesananTiket.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataPencarianTiket.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.UserProfile.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.FormPembayaran.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.DataBookings.resources
+C:\Users\Asus\OneDrive - Universitas Tadulako\syahril\PRAKTIKUM\RPL\UAS-RPL\Sistem Pemesanan Tiket Kereta\obj\Debug\net8.0-windows\Sistem_Pemesanan_Tiket_Kereta.FormPesanTiket.resources
