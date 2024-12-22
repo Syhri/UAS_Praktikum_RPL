@@ -141,5 +141,10 @@ namespace Sistem_Pemesanan_Tiket_Kereta
         {
 
         }
+
+        private void DataKereta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

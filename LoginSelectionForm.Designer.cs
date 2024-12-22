@@ -38,7 +38,7 @@
             btnLoginUser.BackColor = SystemColors.HighlightText;
             btnLoginUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLoginUser.ForeColor = SystemColors.MenuHighlight;
-            btnLoginUser.Location = new Point(106, 97);
+            btnLoginUser.Location = new Point(106, 125);
             btnLoginUser.Name = "btnLoginUser";
             btnLoginUser.Size = new Size(264, 48);
             btnLoginUser.TabIndex = 8;
@@ -48,7 +48,7 @@
             // 
             // label1
             // 
-            label1.BackColor = SystemColors.MenuHighlight;
+            label1.BackColor = SystemColors.HotTrack;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(0, 0);
@@ -65,7 +65,7 @@
             btnLoginAdmin.BackColor = SystemColors.HighlightText;
             btnLoginAdmin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLoginAdmin.ForeColor = SystemColors.MenuHighlight;
-            btnLoginAdmin.Location = new Point(106, 157);
+            btnLoginAdmin.Location = new Point(106, 179);
             btnLoginAdmin.Name = "btnLoginAdmin";
             btnLoginAdmin.Size = new Size(264, 48);
             btnLoginAdmin.TabIndex = 9;
@@ -78,10 +78,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(484, 281);
+            BackgroundImage = Properties.Resources.logo1;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(484, 371);
             Controls.Add(btnLoginAdmin);
             Controls.Add(btnLoginUser);
             Controls.Add(label1);
+            DoubleBuffered = true;
             Name = "LoginSelectionForm";
             Text = "Login Selection";
             ResumeLayout(false);

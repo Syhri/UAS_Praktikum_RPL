@@ -28,7 +28,8 @@ namespace Sistem_Pemesanan_Tiket_Kereta
             textBox.Text = placeholder;
             textBox.ForeColor = Color.Gray;
 
-            textBox.Enter += (sender, e) => {
+            textBox.Enter += (sender, e) =>
+            {
                 if (textBox.Text == placeholder)
                 {
                     textBox.Text = "";
@@ -39,7 +40,8 @@ namespace Sistem_Pemesanan_Tiket_Kereta
                 }
             };
 
-            textBox.Leave += (sender, e) => {
+            textBox.Leave += (sender, e) =>
+            {
                 if (string.IsNullOrWhiteSpace(textBox.Text))
                 {
                     textBox.Text = placeholder;
@@ -164,6 +166,10 @@ namespace Sistem_Pemesanan_Tiket_Kereta
         private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
         {
             // Placeholder logic for txtConfirmPassword
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -28,7 +28,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -44,9 +46,9 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(20, 160);
+            dataGridView1.Location = new Point(20, 164);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(760, 250);
+            dataGridView1.Size = new Size(760, 260);
             dataGridView1.TabIndex = 1;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
@@ -100,7 +102,7 @@
             // txtRute
             // 
             txtRute.BorderStyle = BorderStyle.FixedSingle;
-            txtRute.Location = new Point(500, 60);
+            txtRute.Location = new Point(500, 90);
             txtRute.Name = "txtRute";
             txtRute.Size = new Size(200, 23);
             txtRute.TabIndex = 7;
@@ -126,16 +128,27 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(400, 60);
+            label4.Location = new Point(446, 92);
             label4.Name = "label4";
             label4.Size = new Size(31, 15);
             label4.TabIndex = 10;
             label4.Text = "Rute";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.kereta;
+            pictureBox1.Location = new Point(339, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(399, 86);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
             // DataKereta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -147,9 +160,11 @@
             Controls.Add(btnAdd);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
+            DoubleBuffered = true;
             Name = "DataKereta";
             Size = new Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,5 +182,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private PictureBox pictureBox1;
     }
 }
