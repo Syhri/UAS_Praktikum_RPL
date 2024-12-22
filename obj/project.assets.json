@@ -1609,19 +1609,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\ROG\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\OneDrive - Universitas Tadulako\\syahril\\PRAKTIKUM\\RPL\\UAS-RPL\\Sistem Pemesanan Tiket Kereta\\Sistem Pemesanan Tiket Kereta.csproj",
+      "projectUniqueName": "D:\\Praktikum RPL\\Tubes RPL SLEBEWW\\UAS_Praktikum_RPL\\Sistem Pemesanan Tiket Kereta.csproj",
       "projectName": "Sistem Pemesanan Tiket Kereta",
-      "projectPath": "C:\\Users\\Asus\\OneDrive - Universitas Tadulako\\syahril\\PRAKTIKUM\\RPL\\UAS-RPL\\Sistem Pemesanan Tiket Kereta\\Sistem Pemesanan Tiket Kereta.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\OneDrive - Universitas Tadulako\\syahril\\PRAKTIKUM\\RPL\\UAS-RPL\\Sistem Pemesanan Tiket Kereta\\obj\\",
+      "projectPath": "D:\\Praktikum RPL\\Tubes RPL SLEBEWW\\UAS_Praktikum_RPL\\Sistem Pemesanan Tiket Kereta.csproj",
+      "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
+      "outputPath": "D:\\Praktikum RPL\\Tubes RPL SLEBEWW\\UAS_Praktikum_RPL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
