@@ -44,9 +44,9 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(20, 160);
+            dataGridView1.Location = new Point(20, 164);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(760, 250);
+            dataGridView1.Size = new Size(760, 260);
             dataGridView1.TabIndex = 1;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
@@ -100,7 +100,7 @@
             // txtRute
             // 
             txtRute.BorderStyle = BorderStyle.FixedSingle;
-            txtRute.Location = new Point(500, 60);
+            txtRute.Location = new Point(500, 90);
             txtRute.Name = "txtRute";
             txtRute.Size = new Size(200, 23);
             txtRute.TabIndex = 7;
@@ -126,7 +126,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(400, 60);
+            label4.Location = new Point(446, 92);
             label4.Name = "label4";
             label4.Size = new Size(31, 15);
             label4.TabIndex = 10;
@@ -147,6 +147,7 @@
             Controls.Add(btnAdd);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
+            DoubleBuffered = true;
             Name = "DataKereta";
             Size = new Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

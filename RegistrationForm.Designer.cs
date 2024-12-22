@@ -35,13 +35,16 @@
             label1 = new Label();
             txtPassword = new TextBox();
             txtConfirmPassword = new TextBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblSignIn
             // 
             lblSignIn.AutoSize = true;
             lblSignIn.Cursor = Cursors.Hand;
-            lblSignIn.Location = new Point(152, 357);
+            lblSignIn.ForeColor = Color.SlateGray;
+            lblSignIn.Location = new Point(154, 400);
             lblSignIn.Name = "lblSignIn";
             lblSignIn.Size = new Size(181, 15);
             lblSignIn.TabIndex = 9;
@@ -52,8 +55,8 @@
             // 
             btnRegister.BackColor = SystemColors.HighlightText;
             btnRegister.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRegister.ForeColor = SystemColors.MenuHighlight;
-            btnRegister.Location = new Point(170, 290);
+            btnRegister.ForeColor = Color.LightSlateGray;
+            btnRegister.Location = new Point(172, 338);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(147, 48);
             btnRegister.TabIndex = 8;
@@ -65,7 +68,7 @@
             // 
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
             txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(107, 144);
+            txtUsername.Location = new Point(107, 197);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(275, 29);
             txtUsername.TabIndex = 7;
@@ -75,7 +78,7 @@
             // 
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
             txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtEmail.Location = new Point(108, 98);
+            txtEmail.Location = new Point(107, 162);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(275, 29);
             txtEmail.TabIndex = 6;
@@ -83,7 +86,7 @@
             // 
             // label1
             // 
-            label1.BackColor = SystemColors.MenuHighlight;
+            label1.BackColor = Color.LightSteelBlue;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(0, -1);
@@ -92,14 +95,14 @@
             label1.RightToLeft = RightToLeft.No;
             label1.Size = new Size(485, 57);
             label1.TabIndex = 5;
-            label1.Text = "HALAMAN REGISTRASI";
+            label1.Text = "REGISTRASI";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtPassword
             // 
             txtPassword.BorderStyle = BorderStyle.FixedSingle;
             txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPassword.Location = new Point(108, 188);
+            txtPassword.Location = new Point(107, 232);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(275, 29);
             txtPassword.TabIndex = 10;
@@ -109,18 +112,30 @@
             // 
             txtConfirmPassword.BorderStyle = BorderStyle.FixedSingle;
             txtConfirmPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtConfirmPassword.Location = new Point(108, 232);
+            txtConfirmPassword.Location = new Point(107, 267);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(275, 29);
             txtConfirmPassword.TabIndex = 11;
             txtConfirmPassword.TextChanged += txtConfirmPassword_TextChanged;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.logo1;
+            pictureBox1.Location = new Point(134, 59);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(225, 97);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // RegistrationForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(485, 398);
+            BackColor = Color.Lavender;
+            ClientSize = new Size(485, 441);
+            Controls.Add(pictureBox1);
             Controls.Add(txtConfirmPassword);
             Controls.Add(txtPassword);
             Controls.Add(lblSignIn);
@@ -130,8 +145,8 @@
             Controls.Add(label1);
             Name = "RegistrationForm";
             Text = "Registrasi Form";
-            this.Load += new System.EventHandler(this.RegistrationForm_Load); // Pastikan event handler terhubung di sini
-            //Load += this.RegistrationForm_Load;
+            Load += RegistrationForm_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -145,5 +160,6 @@
         private Label label1;
         private TextBox txtPassword;
         private TextBox txtConfirmPassword;
+        private PictureBox pictureBox1;
     }
 }
